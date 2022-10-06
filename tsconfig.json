@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        /* Language and Environment */
+        "target": "es2016",
+        /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+        /* Modules */
+        "module": "commonjs",
+        /* Specify what module code is generated. */
+        /* Emit */
+        "declaration": true,
+        "outDir": "./lib",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true,
+    },
+    "include": ["src"],
+    "exclude": ["node_modules"]
+}
