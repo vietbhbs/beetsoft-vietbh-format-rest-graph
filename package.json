@@ -1,7 +1,7 @@
 {
-    "name": "beetsoft-vietbh-format-rest-graph",
+    "name": "req-res-formatter",
     "version": "1.0.0",
-    "description": "",
+    "description": "Format data input and output(response) 2 styles: restful api, graphql",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "files": [
@@ -15,8 +15,12 @@
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/@vietbhbs"
     },
-    "keywords": [],
-    "author": "",
+    "keywords": [
+        "fommater",
+        "graphql",
+        "restful api"
+    ],
+    "author": "vietbh",
     "license": "ISC",
     "devDependencies": {
         "@types/express": "^4.17.14",
