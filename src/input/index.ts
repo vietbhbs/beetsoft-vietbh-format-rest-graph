@@ -1,5 +1,5 @@
 export class Input {
-    static inputList(req: any) {
+    static list(req: any) {
         let page: number = req.page
         let offset: number = req.offset
         // if rest api
@@ -11,7 +11,7 @@ export class Input {
         return [page, offset]
     }
 
-    static inputDetail(req: any) {
+    static detail(req: any) {
         let id: number
         if(req.hasOwnProperty('body')){
             id = req.body.id
@@ -22,7 +22,7 @@ export class Input {
         return id
     }
 
-    static inputCreate(req: any){
+    static create(req: any){
         let data: any
 
         if (req.body) {
@@ -34,7 +34,7 @@ export class Input {
         return data
     }
 
-    static inputUpdate(req: any){
+    static update(req: any){
         let id: number
         let data: any
 
@@ -49,7 +49,7 @@ export class Input {
         return [data, id]
     }
 
-    static inputDelete(req: any){
+    static delete(req: any){
         let id: number
 
         if(req.hasOwnProperty('params')){

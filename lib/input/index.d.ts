@@ -1,7 +1,7 @@
 export declare class Input {
-    static inputList(req: any): number[];
-    static inputDetail(req: any): number;
-    static inputCreate(req: any): any;
-    static inputUpdate(req: any): any[];
-    static inputDelete(req: any): number;
+    static list(req: any): number[];
+    static detail(req: any): number;
+    static create(req: any): any;
+    static update(req: any): any[];
+    static delete(req: any): number;
 }

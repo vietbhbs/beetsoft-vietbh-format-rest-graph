@@ -1,6 +1,6 @@
 {
     "name": "req-res-formatter",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Format data input and output(response) 2 styles: restful api, graphql",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
@@ -11,9 +11,6 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "tsc",
         "prepare": "npm run build"
-    },
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/@vietbhbs"
     },
     "keywords": [
         "fommater",
