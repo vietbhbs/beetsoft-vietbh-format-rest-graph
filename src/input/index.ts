@@ -1,4 +1,10 @@
 export class Input {
+    /**
+     * List
+     * Return page and offset
+     *
+     * @param req
+     */
     static list(req: any) {
         let page: number = req.page
         let offset: number = req.offset
@@ -11,6 +17,12 @@ export class Input {
         return [page, offset]
     }
 
+    /**
+     * View detail
+     * Return id of object
+     *
+     * @param req
+     */
     static detail(req: any) {
         let id: number
         if(req.hasOwnProperty('body')){
@@ -22,6 +34,11 @@ export class Input {
         return id
     }
 
+    /**
+     * Create
+     * Return data from request
+     * @param req
+     */
     static create(req: any){
         let data: any
 
@@ -34,6 +51,11 @@ export class Input {
         return data
     }
 
+    /**
+     * Update
+     * Return data and id of object
+     * @param req
+     */
     static update(req: any){
         let id: number
         let data: any
@@ -49,6 +71,11 @@ export class Input {
         return [data, id]
     }
 
+    /**
+     * Delete
+     * Return id of object
+     * @param req
+     */
     static delete(req: any){
         let id: number
 
