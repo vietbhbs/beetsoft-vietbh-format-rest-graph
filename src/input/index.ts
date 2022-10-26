@@ -8,6 +8,7 @@ export class Input {
     static list(req: any) {
         let page: number = req.page
         let offset: number = req.offset
+
         // if rest api
         if (req.body) {
             page = req.body.page
@@ -25,9 +26,10 @@ export class Input {
      */
     static detail(req: any) {
         let id: number
-        if(req.hasOwnProperty('body')){
+
+        if (req.hasOwnProperty('body')) {
             id = req.body.id
-        }else{
+        } else {
             id = req.id
         }
 
@@ -39,7 +41,7 @@ export class Input {
      * Return data from request
      * @param req
      */
-    static create(req: any){
+    static create(req: any) {
         let data: any
 
         if (req.body) {
@@ -56,14 +58,14 @@ export class Input {
      * Return data and id of object
      * @param req
      */
-    static update(req: any){
+    static update(req: any) {
         let id: number
         let data: any
 
-        if(req.hasOwnProperty('params')){
-            id = req.params.id
+        if (req.hasOwnProperty('body')) {
+            id = req.body.id
             data = req.body
-        }else{
+        } else {
             id = req.id
             data = req
         }
@@ -76,12 +78,12 @@ export class Input {
      * Return id of object
      * @param req
      */
-    static delete(req: any){
+    static delete(req: any) {
         let id: number
 
-        if(req.hasOwnProperty('params')){
-            id = req.params.id
-        }else{
+        if (req.hasOwnProperty('body')) {
+            id = req.body.id
+        } else {
             id = req.id
         }
 
