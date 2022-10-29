@@ -25,7 +25,7 @@ export class Input {
      * @param req
      */
     static detail(req: any) {
-        let id: number
+        let id: number | string
 
         if (req.hasOwnProperty('body')) {
             id = req.body.id
@@ -59,7 +59,7 @@ export class Input {
      * @param req
      */
     static update(req: any) {
-        let id: number
+        let id: number | string
         let data: any
 
         if (req.hasOwnProperty('body')) {
@@ -79,7 +79,7 @@ export class Input {
      * @param req
      */
     static delete(req: any) {
-        let id: number
+        let id: number | string
 
         if (req.hasOwnProperty('body')) {
             id = req.body.id
